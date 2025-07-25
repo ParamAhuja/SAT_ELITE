@@ -92,7 +92,7 @@ A live demo is available at:
    ```
 
 4. **Access the App:**
-   - Open your browser and go to `http://localhost:5000` (or the port specified in your app).
+   - Open your browser and go to `<http://127.0.0.1:7860/>` (or the port specified in your app).
 
 ---
 
