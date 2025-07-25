@@ -13,7 +13,6 @@ Acquiring high-resolution data from satellite platforms is an expensive operatio
 SAT_ELITE is a web-based application that allows users to upload or select super-resolved satellite images and receive a blind (no-reference) quality assessment. The app leverages a fine-tuned deep learning model to evaluate the perceptual quality and fidelity of super-resolved images, providing actionable feedback even in the absence of ground-truth high-resolution references.
 
 ![before_image](https://github.com/ParamAhuja/SAT_ELITE/blob/main/backend/LR/baboon.png)
-
 ![after_image](https://github.com/ParamAhuja/SAT_ELITE/blob/main/backend/results/baboon_ESRGAN.png)
 
 ### How the ML Model Was Developed and Trained
