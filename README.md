@@ -48,7 +48,7 @@ We address this by:
 
 - **Name:** SAT_ELITE_DATA
 - **Source:** [Hugging Face Dataset Link](http://huggingface.co/datasets/ParamDev/SAT_ELITE_DATA)
-- **Description:** Contains thousands of satellite images for super-resolution tasks, including both low- and high-resolution pairs.
+- **Description:** Contains train and validation sets of satellite images for super-resolution tasks, including both low-res (sentinel2) and high-res (naip) pairs.
 
 ---
 
@@ -66,37 +66,10 @@ We address this by:
 
 ## Setup and Deployment Instructions
 
-### Prerequisites
+### One-Click Deployment!
 
-- Python 3.8+
-- pip (Python package manager)
-- (Optional) CUDA-enabled GPU for faster inference
-
-### Backend Setup
-
-1. **Clone the Repository:**
-
-   ```bash
-   git clone https://github.com/ParamAhuja/SAT_ELITE.git
-   cd SAT_ELITE/backend
-   ```
-
-2. **Install Dependencies:**
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Download Pretrained Weights:**
-   - Download the fine-tuned ESRGAN weights and place them in the `models/` directory. (Instructions or direct link can be provided here if available.)
-
-4. **Run the Backend Server:**
-
-   ```bash
-   python app.py
-   ```
-
-   *(Or specify the actual backend entry point if different, e.g., `python test.py` or a FastAPI/Flask server script.)*
+A live demo is available at:  
+[https://huggingface.co/spaces/Rockerleo/esrgan](https://huggingface.co/spaces/Rockerleo/esrgan)
 
 ### Frontend Setup
 
@@ -121,29 +94,48 @@ We address this by:
 4. **Access the App:**
    - Open your browser and go to `http://localhost:5000` (or the port specified in your app).
 
-### One-Click Deployment
-
-A live demo is available at:  
-[https://huggingface.co/spaces/Rockerleo/esrgan](https://huggingface.co/spaces/Rockerleo/esrgan)
-
 ---
+
+### Prerequisites for inference:
+
+- Python 3.8+
+- pip (Python package manager)
+- CUDA-enabled GPU for faster inference
+
+### Replicate Results in your script:
+
+1. **Clone the Repository:**
+
+   ```bash
+   git clone https://github.com/ParamAhuja/SAT_ELITE.git
+   cd SAT_ELITE/backend
+   ```
+
+2. **Install Dependencies:**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Download Pretrained Weights:**
+   - Download the fine-tuned ESRGAN weights and place them in the `models/` directory. (Instructions or direct link can be provided here if available.)
+
+4. **Run the Backend Server:**
+
+   ```bash
+   python test.py
+   ```
+
+   *(Or specify the actual backend entry point if different, e.g., `python test.py` or a FastAPI/Flask server script.)*
 
 ## License
 
 - Dataset: MIT License
-- Code: [Specify your code license here, e.g., MIT, Apache 2.0, etc.]
+- Code: MIT License
 
 ---
 
 ## Team & Acknowledgements
 
-- [List your team members, contributors, and any acknowledgements]
+- (https://github.com/ParamAhuja/S)[ParamAhuja]
 
----
-
-## References
-
-- [ESRGAN: Enhanced Super-Resolution Generative Adversarial Networks](https://arxiv.org/abs/1809.00219)
-- [SAT_ELITE_DATA on Hugging Face](http://huggingface.co/datasets/ParamDev/SAT_ELITE_DATA)
-- [Live Demo on Hugging Face Spaces](https://huggingface.co/spaces/Rockerleo/esrgan)
-- [GitHub Repository](https://github.com/ParamAhuja/SAT_ELITE)
