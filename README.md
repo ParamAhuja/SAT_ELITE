@@ -12,7 +12,7 @@ High-resolution satellite imagery can be used in urban planning, agriculture, an
 
 SpectraGAN is a web-based application that allows users to upload or select super-resolved satellite images and receive a blind (no-reference) quality assessment. The app leverages a fine-tuned deep learning model to evaluate the perceptual quality and fidelity of super-resolved images, providing actionable feedback even in the absence of ground-truth high-resolution references.
 
-<table> <tr> <td><img src="https://github.com/ParamAhuja/SAT_ELITE/blob/main/backend/LR/baboon.png" alt="Low-res" height=300px/></td> <td><img src="https://github.com/ParamAhuja/SAT_ELITE/blob/main/backend/results/baboon.png" alt="result" height=300px/></td> </tr> </table>
+![results.png](https://github.com/ParamAhuja/SpectraGAN/blob/main/backend/results/result.png)
 
 ### How the ML Model Was Developed and Trained
 
@@ -43,6 +43,8 @@ The dataset is organized to support **paired image super-resolution tasks**, whe
 ## Live Demo
 
 - [Hugging Face Spaces Deployment](https://huggingface.co/spaces/Rockerleo/esrgan)
+
+<table> <tr> <td><img src="https://github.com/ParamAhuja/SAT_ELITE/blob/main/backend/LR/baboon.png" alt="Low-res" height=300px/></td> <td><img src="https://github.com/ParamAhuja/SAT_ELITE/blob/main/backend/results/baboon.png" alt="result" height=300px/></td> </tr> </table>
 
 ---
 
