@@ -1,8 +1,5 @@
 ---
 title: Real-ESRGAN Dual-Mode Image Upscaler
-emoji: 🖼️
-colorFrom: blue
-colorTo: green
 sdk: gradio
 sdk_version: 5.31.0
 app_file: app.py
@@ -49,16 +46,12 @@ A lightweight Gradio web app to upscale any image using the Real-ESRGAN model. S
 
 ```
 upscale-project/
-├── model/
-│ └── Real-ESRGAN-x4plus.onnx # ONNX model for upscaling
-├── app.py # Main application file
-├── requirements.txt # List of Python dependencies
-├── .gitignore # Git ignore file to exclude unnecessary files
-├── LICENSE # License file for the project
-└── README.md # Project documentation
+├── app.py 
+├── requirements.txt 
+├── .gitattributes 
+├── .gitignore 
+└── README.md 
 ```
-
----
 
 ---
 
@@ -75,8 +68,8 @@ upscale-project/
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/salmanalfarisi11/Upscaler_images.git
-   cd Upscaler_images
+   git clone https://github.com/ParamAhuja/SAT_ELITE.git
+   cd SAT_ELITE/frontend
    ```
 
 2. Create and activate a virtual environment:
@@ -111,8 +104,3 @@ By default, it will start on <http://127.0.0.1:7860/>. Open that URL in your bro
    - Click **Premium Upscale (×8)** for an 8x resolution increase.
 3. Preview your result on the right side.
 4. Click **Download PNG** to save the upscaled image.
-
-## Acknowledgements
-
-This project uses the Real-ESRGAN model developed by Xintao Wang.
-The model is available under the BSD 3-Clause License.
