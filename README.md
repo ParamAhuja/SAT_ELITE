@@ -137,5 +137,4 @@ A live demo is available at:
 
 ## Team & Acknowledgements
 
-- (https://github.com/ParamAhuja/S)[ParamAhuja]
-
+- [ParamAhuja](https://github.com/ParamAhuja), [AngelGupta](https://github.com/AngelGupta13), [MohitGoyal](https://github.com/MohitGoyal)
