@@ -10,7 +10,7 @@ The quality of high-resolution images often depends on various satellite system 
 
 ## 2. What dataset was used?
 
-We used the [SpectraGAN_DATA dataset](http://huggingface.co/datasets/ParamDev/SAT_ELITE_DATA), which contains thousands of paired low- res images fom sentinel2 and high-res images from naip. This dataset is specifically curated for satellite image super-resolution tasks, making it ideal for both training and evaluating our model.
+We used the [SpectraGAN_DATA dataset](https://github.com/ParamAhuja/SpectraGAN), which contains thousands of paired low- res images fom sentinel2 and high-res images from naip. This dataset is specifically curated for satellite image super-resolution tasks, making it ideal for both training and evaluating our model.
 
 ## 3. Why did you choose ESRGAN as your model architecture?
 
