@@ -12,8 +12,7 @@ Acquiring high-resolution data from satellite platforms is an expensive operatio
 
 SAT_ELITE is a web-based application that allows users to upload or select super-resolved satellite images and receive a blind (no-reference) quality assessment. The app leverages a fine-tuned deep learning model to evaluate the perceptual quality and fidelity of super-resolved images, providing actionable feedback even in the absence of ground-truth high-resolution references.
 
-<img src="https://github.com/ParamAhuja/SAT_ELITE/blob/main/backend/LR/baboon.png" alt="before" style="height: 400px;"/>
-<img src="https://github.com/ParamAhuja/SAT_ELITE/blob/main/backend/results/baboon_ESRGAN.png" alt="after" style="height: 400px;"/>
+<table> <tr> <td><img src="https://github.com/ParamAhuja/SAT_ELITE/blob/main/backend/LR/baboon.png" alt="Low-res" height="300"/></td> <td><img src="https://github.com/ParamAhuja/SAT_ELITE/blob/main/backend/results/baboon_ESRGAN.png" alt="ESRGAN result" height="300"/></td> </tr> </table>
 
 ### How the ML Model Was Developed and Trained
 
@@ -52,6 +51,14 @@ We address this by:
 - **Name:** SAT_ELITE_DATA
 - **Source:** [Hugging Face Dataset Link](http://huggingface.co/datasets/ParamDev/SAT_ELITE_DATA)
 - **Description:** Contains train and validation sets of satellite images for super-resolution tasks, including both low-res (sentinel2) and high-res (naip) pairs.
+
+
+| Domain   | Source     | Spatial Resolution | Description                                  |
+| -------- | ---------- | ------------------ | -------------------------------------------- |
+| Low-Res  | Sentinel-2 | 10 meters/pixel    | Multispectral satellite imagery (RGB subset) |
+| High-Res | NAIP       | 1 meter/pixel      | Aerial imagery from USDA's NAIP program      |
+
+The dataset is organized to support **paired image super-resolution tasks**, where each Sentinel-2 patch (input) corresponds spatially and temporally to a high-resolution NAIP patch (target output).
 
 ---
 
