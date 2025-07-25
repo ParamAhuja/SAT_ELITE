@@ -25,26 +25,6 @@ SAT_ELITE is a web-based application that allows users to upload or select super
 - **Quality Assessment:**  
   For blind quality assessment, we implemented a no-reference image quality evaluation module that leverages deep features to predict perceptual quality scores, enabling robust assessment without ground-truth images.
 
-### How It Integrates Into the App
-
-- The backend hosts the fine-tuned ESRGAN model and the blind quality assessment module.
-- The frontend provides a user-friendly interface for uploading images, running super-resolution, and viewing quality scores.
-- When a user submits an image, the backend processes it through the ESRGAN model to generate a super-resolved version, then evaluates its quality using the blind assessment module.
-- Results, including the enhanced image and its quality score, are displayed in the web app.
-
-### The Problem It Solves and Our Approach
-
-**Problem:**  
-Satellite imagery is vital for numerous applications, but acquiring high-resolution images is costly and often infeasible. Super-resolution algorithms can generate high-res images from low-res inputs, but assessing their quality is difficult without ground-truth references.
-
-**Our Approach:**  
-We address this by:
-
-- Fine-tuning a state-of-the-art super-resolution model (ESRGAN) on a domain-specific satellite dataset.
-- Integrating a blind quality assessment module to evaluate the perceptual and structural fidelity of generated images.
-- Providing an accessible web interface for researchers and practitioners to enhance and assess satellite images without the need for ground-truth data.
-
----
 
 ## Dataset
 
@@ -65,6 +45,27 @@ The dataset is organized to support **paired image super-resolution tasks**, whe
 ## Live Demo
 
 - [Hugging Face Spaces Deployment](https://huggingface.co/spaces/Rockerleo/esrgan)
+
+---
+
+### How It Integrates Into the App
+
+- The backend hosts the fine-tuned ESRGAN model and the blind quality assessment module.
+- The frontend provides a user-friendly interface for uploading images, running super-resolution, and viewing quality scores.
+- When a user submits an image, the backend processes it through the ESRGAN model to generate a super-resolved version, then evaluates its quality using the blind assessment module.
+- Results, including the enhanced image and its quality score, are displayed in the web app.
+
+### The Problem It Solves and Our Approach
+
+**Problem:**  
+Satellite imagery is vital for numerous applications, but acquiring high-resolution images is costly and often infeasible. Super-resolution algorithms can generate high-res images from low-res inputs, but assessing their quality is difficult without ground-truth references.
+
+**Our Approach:**  
+We address this by:
+
+- Fine-tuning a state-of-the-art super-resolution model (ESRGAN) on a domain-specific satellite dataset.
+- Integrating a blind quality assessment module to evaluate the perceptual and structural fidelity of generated images.
+- Providing an accessible web interface for researchers and practitioners to enhance and assess satellite images without the need for ground-truth data.
 
 ---
 
