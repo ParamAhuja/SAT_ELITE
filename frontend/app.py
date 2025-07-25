@@ -176,10 +176,10 @@ css = """
 """
 
 
-with gr.Blocks(css=css, title="Real-ESRGAN Triple-Mode Upscaler") as demo:
+with gr.Blocks(css=css, title="SpectraGAN Triple-Mode Upscaler") as demo:
     gr.Markdown(
         """
-        # Real-ESRGAN Upscaler  
+        # SpectraGAN Upscaler  
         **Upscale (×2)**, **Standard Upscale (×4)** atau **Premium Upscale 🚀 (×8)**.  
         
         """

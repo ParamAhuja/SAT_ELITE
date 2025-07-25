@@ -1,4 +1,4 @@
-# SAT_ELITE: Blind Quality Assessment for Super-Resolved Satellite Images
+# SpectraGAN: Blind Quality Assessment for Super-Resolved Satellite Images
 
 ## Problem Statement
 
@@ -10,7 +10,7 @@ High-resolution satellite imagery can be used in urban planning, agriculture, an
 
 ### What the App Does
 
-SAT_ELITE is a web-based application that allows users to upload or select super-resolved satellite images and receive a blind (no-reference) quality assessment. The app leverages a fine-tuned deep learning model to evaluate the perceptual quality and fidelity of super-resolved images, providing actionable feedback even in the absence of ground-truth high-resolution references.
+SpectraGAN is a web-based application that allows users to upload or select super-resolved satellite images and receive a blind (no-reference) quality assessment. The app leverages a fine-tuned deep learning model to evaluate the perceptual quality and fidelity of super-resolved images, providing actionable feedback even in the absence of ground-truth high-resolution references.
 
 <table> <tr> <td><img src="https://github.com/ParamAhuja/SAT_ELITE/blob/main/backend/LR/baboon.png" alt="Low-res" height=300px/></td> <td><img src="https://github.com/ParamAhuja/SAT_ELITE/blob/main/backend/results/baboon_ESRGAN.png" alt="result" height=300px/></td> </tr> </table>
 
@@ -19,19 +19,17 @@ SAT_ELITE is a web-based application that allows users to upload or select super
 - **Model Architecture:**  
   The core of our solution is based on the ESRGAN (Enhanced Super-Resolution Generative Adversarial Networks) architecture, which is renowned for its ability to generate perceptually realistic high-resolution images from low-resolution inputs.
 - **Dataset:**  
-  We fine-tuned the ESRGAN model using the [SAT_ELITE_DATA dataset](http://huggingface.co/datasets/ParamDev/SAT_ELITE_DATA), which contains thousands of satellite images in both low and high resolutions. This dataset is specifically curated for satellite image super-resolution tasks.
+  We fine-tuned the ESRGAN model using the [SpectraGAN_DATA dataset](http://huggingface.co/datasets/ParamDev/SAT_ELITE_DATA), which contains thousands of satellite images in both low and high resolutions. This dataset is specifically curated for satellite image super-resolution tasks.
 - **Training Process:**  
-  The model was initially pre-trained on generic image datasets and then fine-tuned on SAT_ELITE_DATA to adapt to the unique characteristics of satellite imagery. We employed data augmentation, perceptual loss, and adversarial training to ensure the model not only enhances resolution but also preserves critical features relevant to satellite analysis.
+  The model was initially pre-trained on generic image datasets and then fine-tuned on SpectraGAN_DATA to adapt to the unique characteristics of satellite imagery. We employed data augmentation, perceptual loss, and adversarial training to ensure the model not only enhances resolution but also preserves critical features relevant to satellite analysis.
 - **Quality Assessment:**  
   For blind quality assessment, we implemented a no-reference image quality evaluation module that leverages deep features to predict perceptual quality scores, enabling robust assessment without ground-truth images.
 
-
 ## Dataset
 
-- **Name:** SAT_ELITE_DATA
+- **Name:** SpectraGAN_DATA
 - **Source:** [Hugging Face Dataset Link](http://huggingface.co/datasets/ParamDev/SAT_ELITE_DATA)
 - **Description:** Contains train and validation sets of satellite images for super-resolution tasks, including both low-res (sentinel2) and high-res (naip) pairs.
-
 
 | Domain   | Source     | Spatial Resolution | Description                                  |
 | -------- | ---------- | ------------------ | -------------------------------------------- |
@@ -71,13 +69,13 @@ We address this by:
 
 ## Repository
 
-- [GitHub Repository](https://github.com/ParamAhuja/SAT_ELITE)
+- [GitHub Repository](https://github.com/ParamAhuja/SpectraGAN)
 
 ---
 
 ## Setup and Deployment Instructions
 
-### One-Click Deployment!
+### One-Click Deployment
 
 A live demo is available at:  
 [https://huggingface.co/spaces/Rockerleo/esrgan](https://huggingface.co/spaces/Rockerleo/esrgan)
@@ -107,19 +105,19 @@ A live demo is available at:
 
 ---
 
-### Prerequisites for inference:
+### Prerequisites for inference
 
 - Python 3.8+
 - pip (Python package manager)
 - CUDA-enabled GPU for faster inference
 
-### Replicate Results in your script:
+### Replicate Results in your script
 
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/ParamAhuja/SAT_ELITE.git
-   cd SAT_ELITE/backend
+   git clone https://github.com/ParamAhuja/SpectraGAN.git
+   cd SpectraGAN/backend
    ```
 
 2. **Install Dependencies:**

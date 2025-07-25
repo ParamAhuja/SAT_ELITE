@@ -1,4 +1,4 @@
-# SAT_ELITE: FAQs
+# SpectraGAN: FAQs
 
 ## 1. Why this problem?
 
@@ -10,7 +10,7 @@ The quality of high-resolution images often depends on various satellite system 
 
 ## 2. What dataset was used?
 
-We used the [SAT_ELITE_DATA dataset](http://huggingface.co/datasets/ParamDev/SAT_ELITE_DATA), which contains thousands of paired low- res images fom sentinel2 and high-res images from naip. This dataset is specifically curated for satellite image super-resolution tasks, making it ideal for both training and evaluating our model.
+We used the [SpectraGAN_DATA dataset](http://huggingface.co/datasets/ParamDev/SAT_ELITE_DATA), which contains thousands of paired low- res images fom sentinel2 and high-res images from naip. This dataset is specifically curated for satellite image super-resolution tasks, making it ideal for both training and evaluating our model.
 
 ## 3. Why did you choose ESRGAN as your model architecture?
 
@@ -18,7 +18,7 @@ ESRGAN (Enhanced Super-Resolution Generative Adversarial Networks) is a state-of
 
 ## 4. How did you fine-tune your model?
 
-We started with a pre-trained ESRGAN model and fine-tuned it on the SAT_ELITE_DATA dataset. We used data augmentation, perceptual loss, and adversarial training to ensure the model could generalize well to satellite images and preserve important features.
+We started with a pre-trained ESRGAN model and fine-tuned it on the SpectraGAN_DATA dataset. We used data augmentation, perceptual loss, and adversarial training to ensure the model could generalize well to satellite images and preserve important features.
 
 ## 5. How do you assess the quality of super-resolved images without ground-truth references?
 
