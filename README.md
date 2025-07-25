@@ -2,7 +2,7 @@
 
 ## Problem Statement
 
-Acquiring high-resolution data from satellite platforms is an expensive operation due to resource constraints. As a result, satellites often capture multiple low-resolution images, each shifted by half a pixel in both along and across track directions. These low-resolution images are then used to generate high-resolution images through super-resolution algorithms. However, the quality of these super-resolved images depends on various satellite system parameters, including the chosen super-resolution algorithm. Critically, assessing the quality of these generated images is challenging due to the absence of ground-truth references. This necessitates the use of blind (no-reference) quality assessment techniques that can evaluate both the perceptual realism and fidelity of super-resolved images.
+High-resolution satellite imagery can be used in urban planning, agriculture, and disaster management. However, acquiring high-resolution data from satellite platforms is an expensive operation due to resource constraints. Hence, satellites acquire multiple low-resolution images often shifted by half a pixel in both along and across track directions. These low-resolution images are utilized to generate high-resolution images. We want to provide super resolution models apt for low res- satellite imagery, that can capture high frequency changes of aerial images.
 
 ---
 
