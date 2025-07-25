@@ -1,18 +1,22 @@
-# SAT_ELITE: Hackathon Q&A
+# SAT_ELITE: FAQs
 
-## 1. What motivated you to work on this problem?
+## 1. Why this problem?
 
-High-resolution satellite imagery is crucial for applications like urban planning, agriculture, and disaster management. However, acquiring such data is expensive and often infeasible. Super-resolution algorithms can help, but assessing their output quality is challenging without ground-truth references. We wanted to address this gap by providing a blind (no-reference) quality assessment tool for super-resolved satellite images.
+High-resolution satellite imagery can be used in urban planning, agriculture, and disaster management. However, acquiring high-resolution data from satellite platforms is an expensive operation due to resource constraints. Hence, satellites acquire multiple low-resolution images often shifted by half a pixel in both along and across track directions. These low-resolution images are utilized to generate high-resolution images. We want to provide super resolution models apt for low res- satellite imagery, that can capture high frequency changes of aerial images.
 
-## 2. What dataset did you use and why?
+## What is blind-assessment?
 
-We used the [SAT_ELITE_DATA dataset](http://huggingface.co/datasets/ParamDev/SAT_ELITE_DATA), which contains thousands of paired low- and high-resolution satellite images. This dataset is specifically curated for satellite image super-resolution tasks, making it ideal for both training and evaluating our model.
+The quality of high-resolution images often depends on various satellite system parameters including the algorithm used for super-resolving. However, assessing the quality of these generated super-resolved images is challenging due to the absence of ground-truth references. This also necessitates the use of blind (no-reference) quality assessment techniques that can evaluate both the perceptual realism and fidelity of super-resolved images.
+
+## 2. What dataset was used?
+
+We used the [SAT_ELITE_DATA dataset](http://huggingface.co/datasets/ParamDev/SAT_ELITE_DATA), which contains thousands of paired low- res images fom sentinel2 and high-res images from naip. This dataset is specifically curated for satellite image super-resolution tasks, making it ideal for both training and evaluating our model.
 
 ## 3. Why did you choose ESRGAN as your model architecture?
 
 ESRGAN (Enhanced Super-Resolution Generative Adversarial Networks) is a state-of-the-art model for image super-resolution. It is known for producing perceptually realistic high-resolution images, which is essential for satellite imagery where fine details matter. Its architecture is also flexible for fine-tuning on domain-specific data.
 
-## 4. How did you train and fine-tune your model?
+## 4. How did you fine-tune your model?
 
 We started with a pre-trained ESRGAN model and fine-tuned it on the SAT_ELITE_DATA dataset. We used data augmentation, perceptual loss, and adversarial training to ensure the model could generalize well to satellite images and preserve important features.
 
